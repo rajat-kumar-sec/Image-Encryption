@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Encryption Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔐 Image Encryption Tool</h1>
+            <p>Secure your images with military-grade AES-256 encryption</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'encrypt')">Encrypt</button>
+            <button class="tab-button" onclick="openTab(event, 'decrypt')">Decrypt</button>
+            <button class="tab-button" onclick="openTab(event, 'info')">About</button>
+        </div>
+
+        <!-- Encrypt Tab -->
+        <div id="encrypt" class="tab-content active">
+            <div class="card">
+                <h2>🔒 Encrypt Your Image</h2>
+                <form id="encryptForm">
+                    <div class="form-group">
+                        <label for="encryptImage">Select Image:</label>
+                        <input type="file" id="encryptImage" name="image" accept="image/*" required>
+                        <small>Supported: JPG, PNG, GIF, BMP, WebP (Max 50MB)</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="encryptPassword">Encryption Password:</label>
+                        <input type="password" id="encryptPassword" name="password" placeholder="Enter strong password" required>
+                        <small>Use a strong password for better security</small>
+                    </div>
+
+                    <div class="preview-group">
+                        <label>Image Preview:</label>
+                        <img id="encryptPreview" src="" alt="No image selected" class="preview">
+                        <p id="encryptImageInfo" class="image-info"></p>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-icon">🔒</span> Encrypt Image
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Decrypt Tab -->
+        <div id="decrypt" class="tab-content">
+            <div class="card">
+                <h2>🔓 Decrypt Your Image</h2>
+                <form id="decryptForm">
+                    <div class="form-group">
+                        <label for="decryptImage">Select Encrypted File:</label>
+                        <input type="file" id="decryptImage" name="encrypted_image" accept=".enc" required>
+                        <small>File should have .enc extension</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="decryptPassword">Decryption Password:</label>
+                        <input type="password" id="decryptPassword" name="password" placeholder="Enter password used during encryption" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-icon">🔓</span> Decrypt Image
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Info Tab -->
+        <div id="info" class="tab-content">
+            <div class="card">
+                <h2>ℹ️ About This Tool</h2>
+                
+                <div class="info-section">
+                    <h3>🛡️ Security Features</h3>
+                    <ul>
+                        <li><strong>AES-256 Encryption:</strong> Military-grade symmetric encryption</li>
+                        <li><strong>Fernet (HMAC+AES):</strong> Authenticated encryption for data integrity</li>
+                        <li><strong>SHA-256 Key Derivation:</strong> Secure password-to-key conversion</li>
+                        <li><strong>Client-Side Processing:</strong> All encryption happens locally - no uploads</li>
+                        <li><strong>Zero Knowledge:</strong> Your data never leaves your browser</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h3>🔧 How It Works</h3>
+                    <ol>
+                        <li>Upload your image file</li>
+                        <li>Enter a strong password</li>
+                        <li>Click "Encrypt" - image is encrypted using AES-256</li>
+                        <li>Download the encrypted .enc file (unreadable without password)</li>
+                        <li>To decrypt, upload the .enc file and enter the same password</li>
+                    </ol>
+                </div>
+
+                <div class="info-section">
+                    <h3>🔐 Password Tips</h3>
+                    <ul>
+                        <li>Use at least 12 characters</li>
+                        <li>Mix uppercase, lowercase, numbers, and symbols</li>
+                        <li>Avoid common words or personal information</li>
+                        <li>Use unique passwords for different images</li>
+                        <li>Store passwords securely</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h3>📊 Technical Details</h3>
+                    <table class="tech-table">
+                        <tr>
+                            <td><strong>Encryption Method:</strong></td>
+                            <td>Fernet (symmetric)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Key Length:</strong></td>
+                            <td>256-bit</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Algorithm:</strong></td>
+                            <td>AES (CBC mode)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Authentication:</strong></td>
+                            <td>HMAC-SHA256</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Data Location:</strong></td>
+                            <td>Client-side only</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="info-section">
+                    <h3>⚠️ Important Notes</h3>
+                    <ul>
+                        <li>Keep your password safe - without it, data cannot be recovered</li>
+                        <li>This tool uses open-source cryptography libraries</li>
+                        <li>No server-side storage - refresh the page and your data is gone</li>
+                        <li>For maximum security, run this tool on a trusted device</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Status Messages -->
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
