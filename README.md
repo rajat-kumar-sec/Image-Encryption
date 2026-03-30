@@ -1,4 +1,4 @@
-Image Encryption
+:Image Encryption:
 
 A simple and efficient project for encrypting and decrypting images to ensure data security and privacy. This repository demonstrates how image data can be transformed into an unreadable format and later restored using a decryption process.
 
