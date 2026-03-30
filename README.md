@@ -24,7 +24,7 @@ os, random
 
 Getting Started
 
-Clone the Repository
+Clone the Repository:
 git clone https://github.com/rajat-kumar-sec/Image-Encryption.git
 
 cd Image-Encryption
