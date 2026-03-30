@@ -22,7 +22,7 @@ PIL (Pillow)
 tkinter (for GUI, if applicable)
 os, random
 
-Getting Started
+Getting Started:
 
 Clone the Repository:
 git clone https://github.com/rajat-kumar-sec/Image-Encryption.git
