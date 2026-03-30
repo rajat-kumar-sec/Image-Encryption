@@ -50,7 +50,7 @@ Image-Encryption/
 │── decrypted_images/
 │── README.md
 
-Example Workflow
+### Example Workflow ###
 
 Original Image → Encrypt → Encrypted Image → Decrypt → Original Image
 
