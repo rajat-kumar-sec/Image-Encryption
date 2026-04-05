@@ -35,7 +35,7 @@ python main.py
 
 Note: The main script filename may vary (e.g., image_encryption.py). Update accordingly.
 
-How It Works---
+How It Works----
 
 The input image is read and converted into pixel data
 Encryption logic is applied (e.g., pixel manipulation, key-based transformation)
