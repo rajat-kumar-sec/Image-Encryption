@@ -54,7 +54,7 @@ Image-Encryption/
 
 Original Image → Encrypt → Encrypted Image → Decrypt → Original Image
 
---- Use Cases ---
+--- Use_Cases ---
 
 Secure image sharing
 Protecting confidential visual data
