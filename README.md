@@ -1,4 +1,4 @@
-:Image Encryption:
+Image Encryption
 
 A simple and efficient project for encrypting and decrypting images to ensure data security and privacy. This repository demonstrates how image data can be transformed into an unreadable format and later restored using a decryption process.
 
@@ -54,7 +54,7 @@ Image-Encryption/
 
 Original Image → Encrypt → Encrypted Image → Decrypt → Original Image
 
---- Use_Cases ---
+ Use Cases 
 
 Secure image sharing
 Protecting confidential visual data
