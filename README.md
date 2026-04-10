@@ -12,7 +12,7 @@ Easy-to-understand code for learning purposes
 
 Tech Stack
 
-Programming Language: Python...
+Programming Language: Python
 
 Libraries Used:::
 
