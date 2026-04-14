@@ -6,7 +6,7 @@ Features
 
 Encrypt images to protect sensitive data.
 Decrypt images back to original form.
-Supports common image formats
+Supports common image formats.
 Fast and lightweight implementation
 Easy-to-understand code for learning purposes
 
