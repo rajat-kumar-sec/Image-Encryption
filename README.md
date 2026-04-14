@@ -10,7 +10,7 @@ Supports common image formats.
 Fast and lightweight implementation.
 Easy-to-understand code for learning purposes.
 
-Tech Stack
+Tech Stack:
 
 Programming Language: Python
 
