@@ -4,7 +4,7 @@ A simple and efficient project for encrypting and decrypting images to ensure da
 
 Features
 
-Encrypt images to protect sensitive data
+Encrypt images to protect sensitive data.
 Decrypt images back to original form
 Supports common image formats
 Fast and lightweight implementation
