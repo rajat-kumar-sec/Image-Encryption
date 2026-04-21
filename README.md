@@ -67,5 +67,5 @@ Contributions are welcome!!!
 
 Fork the repo.
 Create a new branch (feature-xyz)
-Commit your changes.
-Open a Pull Request.
+Commit your changes...
+Open a Pull Request...
