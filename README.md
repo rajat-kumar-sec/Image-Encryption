@@ -16,11 +16,11 @@ Programming Language: Python
 
 Libraries Used---
 
-numpy
-opencv (cv2)
-PIL (Pillow)
-tkinter (for GUI, if applicable)
-os, random
+numpy.
+opencv (cv2).
+PIL (Pillow).
+tkinter (for GUI, if applicable).
+os, random.
 
 Getting Started:
 
