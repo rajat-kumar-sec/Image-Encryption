@@ -56,7 +56,7 @@ Original Image → Encrypt → Encrypted Image → Decrypt → Original Image :
 
  Use Cases 
 
-Secure image sharing
+Secure image sharing.
 Protecting confidential visual data
 Learning cryptography concepts
 Academic projects
