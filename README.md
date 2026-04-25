@@ -59,7 +59,7 @@ Original Image → Encrypt → Encrypted Image → Decrypt → Original Image :
 Secure image sharing.
 Protecting confidential visual data.
 Learning cryptography concepts.
-Academic projects
+Academic projects.
 
 Contributing
 
