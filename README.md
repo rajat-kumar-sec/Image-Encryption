@@ -52,7 +52,7 @@ Image-Encryption/
 
  Example Workflow 
 
-Original Image → Encrypt → Encrypted Image → Decrypt → Original Image
+Original Image → Encrypt → Encrypted Image → Decrypt → Original Image :
 
  Use Cases 
 
