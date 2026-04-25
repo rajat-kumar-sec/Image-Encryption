@@ -61,7 +61,7 @@ Protecting confidential visual data.
 Learning cryptography concepts.
 Academic projects.
 
-Contributing
+Contributing :
 
 Contributions are welcome!!!
 
