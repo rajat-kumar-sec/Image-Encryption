@@ -39,7 +39,7 @@ How It Works:
 
 The input image is read and converted into pixel data in Encrypted Formate Which is not UnEncrypted without the Password !!!
 Encryption logic is applied (e.g., pixel manipulation, key-based transformation)
-The encrypted image is generated and saved
+The encrypted image is generated and saved.
 Decryption reverses the process using the same key
 
 Project Structure:
