@@ -28,7 +28,7 @@ Clone the Repository
 git clone https://github.com/rajat-kumar-sec/Image-Encryption.git
 
 cd Image-Encryption
-Install Dependencies.
+Install Dependencies
 pip install numpy opencv-python pillow.
 Run the Program.
 python main.py.
