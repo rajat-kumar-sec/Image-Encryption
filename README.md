@@ -42,7 +42,7 @@ Encryption logic is applied (e.g., pixel manipulation, key-based transformation)
 The encrypted image is generated and saved.
 Decryption reverses the process using the same key. and there is not option to bypass that key .
 
-Project Structure:
+Project Structures:
 
 Image-Encryption/
 │── main.py / image_encryption.py
