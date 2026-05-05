@@ -14,7 +14,7 @@ Tech Stack
 
 Programming Languages: Python
 
-Libraries Used
+Libraries Used:
 
 numpy.
 opencv (cv2).
